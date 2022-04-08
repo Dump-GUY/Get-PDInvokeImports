@@ -10,12 +10,10 @@ to DnSpy_Bookmarks.xml
 This PS module could be useful and helpful during reversing .NET assemblies for
 fast revealing calls to unmanaged API functions used in assembly. Sometimes
 malware assemblies are full of junk code where the main functionality is
-implemented by direct WIN API or NTAPI calls.
-
+implemented by direct WIN API or NTAPI calls.<br/>
 Get-PDInvokeImports enables you to get fast overview what P/Invoke, Dynamic
 P/Invoke and D/Invoke are used in assembly - It will show you what functions are
-used + MDTokens, where are declared, and all location where are used from code.
-
+used + MDTokens, where are declared, and all location where are used from code.<br/>
 It enables to export all locations where are detected P/Invoke, Dynamic P/Invoke
 and D/Invoke referenced from code to DnSpy Bookmarks.xml
 
@@ -23,9 +21,7 @@ Example: Imagine 1MB assembly full of junk code + CF obfuscation where main
 functionality is reached via unmanaged WinAPI\\NTAPI calls.
 
 This PS module is written in PowerShell and is fully compatible with Windows
-PowerShell (.NET Framework) and PowerShell Core (based on .NET, .NET Core).
-
-It uses dnlib to parse assembly and .NET reflection to load dnlib. Dnlib is
+PowerShell (.NET Framework) and PowerShell Core (based on .NET, .NET Core). It uses dnlib to parse assembly and .NET reflection to load dnlib. Dnlib is
 available for .NET framework and .NET standard - simply means that one can use
 this PS module depending on dnlib on Windows and also Linux OS.
 
@@ -47,10 +43,10 @@ PInvoke]](https://bohops.com/2022/04/02/unmanaged-code-execution-with-net-dynami
 
 ## Installation:
 
-Release contains already compiled dnlib for specified platform + script
+[[Releases]](https://github.com/Dump-GUY/Get-PDInvokeImports/releases) contains already compiled dnlib for specified platform + script
 Get-PDInvokeImports.ps1.<br/>
-Windows – Download release (Use from Windows PowerShell or PowerShell Core)<br/>
-Linux – Download release (Use from PowerShell Core)<br/>
+Windows – Download [[release]](https://github.com/Dump-GUY/Get-PDInvokeImports/releases) (Use from Windows PowerShell or PowerShell Core)<br/>
+Linux – Download [[release]](https://github.com/Dump-GUY/Get-PDInvokeImports/releases) (Use from PowerShell Core)<br/>
 
 If needed - compile dnlib on your own (Windows – .NET Framework,
 Linux-netstandard)<br/>
@@ -120,5 +116,5 @@ Dynamic P/Invoke detection is based on finding methodX referencing DefinePInvoke
 ## Dependecies:
 
 [[dnlib]](https://github.com/0xd4d/dnlib) (.NET metadata reader/writer which can
-also read obfuscated assemblies)
-[[DnSpyEx - optional]](https://github.com/dnSpyEx/dnSpy)
+also read obfuscated assemblies)<br/>
+[[DnSpyEx - optional]](https://github.com/dnSpyEx/dnSpy)<br/>
