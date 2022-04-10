@@ -53,7 +53,7 @@ Linux-netstandard)<br/>
 
 ## Usage:
 
-### Video: [YouTube] - In Process
+### Video: [[YouTube]](https://youtu.be/pPdN_vdm9lw)
 
 ### [PARAMETER] -PathToAssembly
 
